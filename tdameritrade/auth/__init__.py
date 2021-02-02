@@ -38,7 +38,7 @@ def authentication(client_id, redirect_uri, tdauser=None, tdapass=None):
     driver.get(url)
 
     # Set tdauser and tdapass from environemnt if TDAUSER and TDAPASS environment variables were defined
-    tdauser = tdauser or os.environ.get('TDAUSER', '')
+    tdauser = tdauser or os.environ.get('TDAUSER', 'michaelgazsi98')
     tdapass = tdapass or os.environ.get('TDAPASS', '')
 
     # Fully automated oauth2 authentication (if tdauser and tdapass were intputed into the function, or found as
