@@ -18,7 +18,7 @@ def authentication(client_id, redirect_uri, tdauser=None, tdapass=None):
     if sys.platform == 'darwin':
         # MacOS
         if os.path.exists("/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"):
-            options.binary_location = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+            options.binary_location = "/Applications/Google Chrome.app/Contents//Google Chrome"
         elif os.path.exists("/Applications/Chrome.app/Contents/MacOS/Google Chrome"):
             options.binary_location = "/Applications/Chrome.app/Contents/MacOS/Google Chrome"
     elif 'linux' in sys.platform:
